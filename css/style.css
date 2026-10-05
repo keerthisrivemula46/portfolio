@@ -2669,3 +2669,26 @@ button {
 #certifications .section-heading h2 {
     margin-left: 0 !important;
 }
+/* ===============================
+   CERTIFICATIONS HEADING FIX
+================================ */
+
+#certifications .section-heading {
+    display: block !important;
+    margin-bottom: 50px !important;
+}
+
+#certifications .section-heading::before,
+#certifications .section-heading::after {
+    display: none !important;
+    content: none !important;
+}
+
+#certifications .section-heading .section-tag {
+    display: none !important;
+}
+
+#certifications .section-heading h2 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
