@@ -2549,3 +2549,106 @@ button {
         gap: 8px !important;
     }
 }
+/* =====================================================
+   PROJECTS - CLEAN FINAL LAYOUT
+   ===================================================== */
+
+.projects-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+.project-card {
+    position: relative !important;
+
+    display: grid !important;
+    grid-template-columns: 70px 70px minmax(0, 1fr) !important;
+
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+
+    box-sizing: border-box !important;
+
+    align-items: center !important;
+    gap: 25px !important;
+
+    padding: 30px !important;
+}
+
+/* Project content should get the remaining space */
+.project-content {
+    min-width: 0 !important;
+    width: auto !important;
+}
+
+.project-content h3 {
+    margin: 5px 0 8px !important;
+
+    font-family: var(--heading-font) !important;
+    font-size: 1.7rem !important;
+    line-height: 1.25 !important;
+}
+
+.project-content p {
+    max-width: 760px !important;
+    line-height: 1.7 !important;
+}
+
+/* Technology tags */
+.project-tags {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    margin-top: 15px !important;
+}
+
+/* Project links */
+.project-links {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 25px !important;
+    margin-top: 18px !important;
+}
+
+.project-links .project-link {
+    margin-top: 0 !important;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .project-card {
+        grid-template-columns: 55px 65px minmax(0, 1fr) !important;
+        gap: 18px !important;
+        padding: 25px !important;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .project-card {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        padding: 25px !important;
+    }
+
+    .project-number {
+        position: absolute !important;
+        top: 20px !important;
+        right: 20px !important;
+    }
+
+    .project-links {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 8px !important;
+    }
+}
