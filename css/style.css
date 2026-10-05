@@ -2692,3 +2692,28 @@ button {
     margin: 0 !important;
     padding: 0 !important;
 }
+/* =========================================
+   REMOVE CERTIFICATIONS LABEL COMPLETELY
+========================================= */
+
+#certifications::before,
+#certifications::after,
+#certifications .section-heading::before,
+#certifications .section-heading::after,
+#certifications .section-heading .section-tag,
+#certifications .section-heading .section-number {
+    content: none !important;
+    display: none !important;
+    visibility: hidden !important;
+}
+
+#certifications .section-heading {
+    display: block !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+#certifications .section-heading h2 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
