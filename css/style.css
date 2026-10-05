@@ -2652,3 +2652,7 @@ button {
         gap: 8px !important;
     }
 }
+/* Hide Certifications blue section label */
+#certifications .section-tag {
+    display: none !important;
+}
