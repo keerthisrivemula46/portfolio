@@ -2656,3 +2656,16 @@ button {
 #certifications .section-tag {
     display: none !important;
 }
+#certifications .section-heading::before,
+#certifications .section-heading::after {
+    display: none !important;
+    content: none !important;
+}
+
+#certifications .section-heading .section-tag {
+    display: none !important;
+}
+
+#certifications .section-heading h2 {
+    margin-left: 0 !important;
+}
